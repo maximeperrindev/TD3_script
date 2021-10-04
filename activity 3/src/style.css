@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    opacity: .7;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+.shopping-form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-form input {
+    width: 25%;
+    font-size: large;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.btn-add {
+    font-size: large;
+    background-color: rgb(97, 145, 87);
+    border: none;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.list-item {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari et Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.load {
+    opacity: 1;
+}
+
+.list {
+    margin-top: 30px !important;
+    width: 95%;
+    height: 70%;
+    margin: auto;
+    background-color: #f8f8f9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list li {
+    margin: 10px 20px;
+}
+
+.btn-delete {
+    font-size: large;
+    background-color: #f37979;
+    border: none;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-add-item {
+    font-size: large;
+    background-color: rgb(97, 145, 87);
+    border: none;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#quantity {
+    width: 40px;
+    font-size: large;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* sur Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* sur Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
